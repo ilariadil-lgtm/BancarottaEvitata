@@ -1,0 +1,77 @@
+:root {
+  --color-mint: #C1E1C1;
+  --color-peach: #FFDAB9;
+  --color-lavender: #E6E6FA;
+  --color-yellow: #FFFACD;
+  --color-bg: #F0F4F8;
+  --color-text: #333333;
+  --color-coral: #FF7F50;
+  --color-white: #FFFFFF;
+
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 12px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--color-mint);
+  color: #2c5e2e;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.input-control {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.input-control:focus {
+  outline: none;
+  border-color: var(--color-mint);
+  background-color: #fff;
+}
